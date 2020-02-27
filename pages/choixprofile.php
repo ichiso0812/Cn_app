@@ -1,4 +1,21 @@
+
 <style>
+
+    /*TODO  DELETE BEFORE COMMIT*/
+
+    h1 {
+    font-family: "LubalinBold", serif;
+    }
+    @font-face {/*TITLE FONT*/
+        font-family: "LubalinBold";
+        src: url("/Cn-app/assets/fonts/Lubalin-Graph-Bold.ttf"), 
+            url("/Cn-app/fonts/LubalinGraphStd-Bold.otf")   ;
+    }
+    /*DELETE BEFORE COMMIT*/
+    body{
+        margin :0;
+    }
+
     #full_screen {
         width: 100vw;
         height: 100vh;
@@ -7,10 +24,11 @@
     }
     h1{
         color : white;
-        font-family: "LubalinBold", serif;
-        font-size : 4rem;
+        font-size : 60px;
         text-align : center;
+        margin-bottom : 100px;
     }
+    /*BARS TRICOLORE*/ 
     .deco_bar {
         width: 100%;
         height: 0.55em;
@@ -41,17 +59,29 @@
         display: flex;
         justify-content : space-evenly;
     }
+    /* AVATAR PROFIL*/
     .avatar{
         width : 250px;
         height:250px;
         border: solid 2px white;
         border-radius: 5%;
     }
+    /* BOUTON PROFIL*/
     p{
         color: white;
         font-size: 35px;
         text-align: center;
         font-family: "Nunito", serif;
+    }
+    .boutton_compte{
+        width: 700px;
+        height: 120px;
+        background-color: white;
+        border-radius: 10px;
+        font-size : 40px;
+    }
+    .crea-profil{
+        margin-top : 3rem;
     }
 
 </style>
@@ -138,14 +168,16 @@
                 <div class="col-2"></div>
             </div>
             <!-- boutons-->
-            <div class="row bouton">
-                <div class="col-8">
-                    <form>
-                        <button type="button" class="btn btn-lg">Créer un nouveau profil</button>
-                    </form>
+            <div class="crea-profil">
+                <div class="row bouton">
+                    <div class="col-8">
+                        <form>
+                            <button type="button" class="btn btn-lg boutton_compte"><b>Créer un nouveau profil</b></button>
+                        </form>
+                    </div>
                 </div>
+                <p><b>Changer de compte ?</b><p>
             </div>
-            <p><b>Changer de compte ?</b><p>
         </div>
     </div>
 </div>
