@@ -17,5 +17,5 @@
         </div>
     <?php } ?>
 
-    $series->closeCursor(); ?>
+    <?php $series->closeCursor(); ?>
 </div>

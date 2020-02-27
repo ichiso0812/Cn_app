@@ -1,49 +1,17 @@
-
-/*Bouton VIDEOS et JEUX bottom*/
-.video_jeux{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: fixed;
-    bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    text-align: center;
-    z-index: 99;
+/* mon composant menu videos/jeux  */
+.menu_switch {
 }
-.video{
-    display: flex;
-    background-color: white;
+
+/* définition des liens  */
+.menu_switch .menu_switch__link {
     color: black;
-    width: 100%;
-    text-align: center;
-    height: 50px;
-    border-top: solid 1px black;
-    justify-content: center;
-    align-items: center;
-}
-.lien_video{
-    text-decoration: none;
-    color: black;
-    font-family: "LubalinBold", serif;
-}
-.lien_jeux{
-    text-decoration: none;
-    color: white;
-    font-family: "LubalinBold", serif;
-}
-.jeux{
-    background-color: black;
-    color: white;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
+/* alternative, lien actif  */
+.menu_switch .menu_switch__link.active {
 
+}
+ /* end  */
 
 
 h2{
@@ -86,14 +54,7 @@ h3{
 html body div.video-encours img.img-fluid{
     border-radius: 5%;
 }
-html body div.video_jeux a.jeux div{
-    margin-top: 15px;
-    font-family: "LubalinBold", serif;
-}
-html body div.video_jeux a.video div{
-    margin-top: 15px;
-    font-family: "LubalinBold", serif;
-}
+
 .titre-temps{
     width: 100%;
     justify-content: space-between;
@@ -137,12 +98,17 @@ html body div.container-fluid div.row div.col-8 div.video-encours div.texte_vide
     margin-bottom: 30px;
     padding-bottom: 50px;
     padding-top: 20px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+
 
 }
 
 .img_slide{
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-top: 0px;
     border-radius: 5%;
 
@@ -160,8 +126,8 @@ html body div.container-fluid.proposition div.row div.col-10.titre_proposition h
     -moz-border-radius-bottomleft: 5px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
 	padding-left: 5px;
     padding-top: 5px;
     background-color: whitesmoke;
@@ -184,8 +150,7 @@ html body div.container-fluid.proposition div.row div.col-10.titre_proposition h
 
 
 .favoris{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     padding-bottom: 50px;
     padding-top: 20px;
 }
@@ -196,8 +161,8 @@ html body div.container-fluid.proposition div.row div.col-10.titre_proposition h
     -moz-border-radius-bottomleft: 5px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
 	padding-left: 5px;
     padding-top: 5px;
     background-color: #fff15c;
@@ -205,17 +170,37 @@ html body div.container-fluid.proposition div.row div.col-10.titre_proposition h
 h2{
     font-family: "LubalinBold", serif;
     text-align: center;
-    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 1.3rem;
+    padding-bottom: 10px;
 }
 .btn_favoris{
     background-color: black;
     text-align: center;
     margin-top: 20px;
     justify-content: center;
-    border-radius: 5%;
+    border-radius: 5px;
     padding:10px;
-
 }
+.btn_teentitans{
+    background-color: black;
+    text-align: center;
+    margin-top: 0px;
+    justify-content: center;
+    border-radius: 5px;
+    padding:10px;
+}
+
+.btn_heros{
+    background-color: black;
+    text-align: center;
+    margin-top: 0px;
+    justify-content: center;
+    border-radius: 5px;
+    padding:10px;
+    margin-bottom: 15px;
+}
+
 html body div.container-fluid.favoris div.btn_favoris a{
     color: white;
     text-decoration: none;
@@ -225,11 +210,24 @@ html body div.container-fluid.favoris div.btn_favoris a{
 
 .teentitans{
     margin-top: 30px;
-    margin-bottom: 30px;
-    padding-bottom: 50px;
     padding-top: 20px;
     background-color: #009BDF;
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
+.container_teentitans{
+    margin-top: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #009BDF;
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .titrerose{
     color: #ED0080;
     font-family: "LubalinBold", serif;
@@ -241,14 +239,55 @@ html body div.container-fluid.favoris div.btn_favoris a{
     font-weight: 800;
     margin-left: 5px;
 }
-.fleche_blanche{
+.fleche_jaune{
     fill: #FFF15C;
+    margin-left: 15px;
+}
+.fleche_blanche{
+    fill: #fff;
     margin-left: 15px;
 }
 .titreblanc{
     color: white;
+    padding-bottom: 10px;
 }
 
-.img_slide > img {
+.favoris_slider .img_slide > img {
     border-radius: 5% 5% 0 0;
+}
+.btn_favoris > a{
+    color: white;
+    font-family: "LubalinBold", serif;
+}
+.btn_teentitans > a {
+    color: white;
+    font-family: "LubalinBold", serif;
+}
+.titrenoir{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 800;
+}
+.hero_img{
+    border-radius: 0%;
+    margin-bottom: 10px;
+}
+.btn_heros a{
+    font-family: "LubalinBold", serif;
+    font-weight: 800;
+    color: white;
+}
+.continuer_regarder{
+    text-align: left;
+}
+.titreandplay{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn_play{
+    margin-right: 15px;
+    margin-top: -25px;
 }
