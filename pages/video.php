@@ -14,7 +14,7 @@
             position: absolute;
             bottom:0;
 
-            height: 83vh;
+            height: 89vh;
             background: rgb(0,0,0);
             background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0.11808473389355745) 100%);
             color: white;

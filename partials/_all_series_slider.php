@@ -7,6 +7,14 @@
         margin-right: 15px;
         max-height: 75px;
     }
+    #all_series_slider {
+        border-bottom: 1px solid #121212;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 8vh;
+        z-index: 1000000;
+        background-color: white;
+    }
 </style>
 <div id="all_series_slider">
     <?php while ($serie = $series->fetch()){ ?>
@@ -16,6 +24,5 @@
             </a>
         </div>
     <?php } ?>
-
-    <?php $series->closeCursor(); ?>
 </div>
+<?php $series->closeCursor(); ?>

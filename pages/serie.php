@@ -37,6 +37,7 @@
 </head>
     <body>
         <?php 
+             include $_SERVER["DOCUMENT_ROOT"] . '/Cn-app/partials/_header.php';
              include $_SERVER["DOCUMENT_ROOT"] . '/Cn-app/partials/_all_series_slider.php';
              $bdd = new PDO('mysql:host=localhost;dbname=cn-watch;charset=utf8', "root", "", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
              $request_serie = $bdd->query('SELECT * FROM serie WHERE id=' . $_GET['id']);
@@ -66,13 +67,11 @@
             <div class="row mt-3">
                 <?php $episodes = $bdd->query('SELECT * FROM episode WHERE serie_id=' . $_GET['id']);?>
                 <?php while ($episode =  $episodes->fetch()){?>
-                   
                     <div class="col-sm-6 col-md-4 mb-4 episode">
                         <div class="fond_noir">
-                            <a href="#">
+                            <a href=<?='/Cn-app/pages/video?id=' . $episode["id"] . "&serie_name=" . str_replace(" ", "%20", $serie['real_name']) ?>>
                                 <img class="img-fluid" src=<?='/Cn-app/assets/imgs/screen_episodes/' . $serie['name'] . '/s' . $episode['season_num'] . '_e' .$episode['episode_num']?> alt="">
                             </a>
-
                             <div class="episode_infos">
                                 <h2><?=$episode["name"]?></h2>
                                 <p class="episode_number">Saison <?=$episode["season_num"]?> Ep <?=$episode["episode_num"]?></p>
@@ -85,7 +84,7 @@
                 <?php } ?>
             </div>
         </div>
-        <?php include  $_SERVER["DOCUMENT_ROOT"] . '/Cn-app/partials/_video_game_bot_menu.php' ?>
+        <?php include  $_SERVER["DOCUMENT_ROOT"] . '/Cn-app/partials/_video_game_bot_menu.php'; ?>
         <?php include $_SERVER["DOCUMENT_ROOT"] . '/Cn-app/includes/_scripts.php'; ?>
         <script src="/Cn-app/assets/js/main.js"></script>
         

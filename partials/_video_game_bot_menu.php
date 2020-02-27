@@ -1,16 +1,16 @@
 <div class="container-fluid video_jeux">
-            <div class="col-6 video">
-                <a  class="lien_video" href="#">
-                    VIDÉOS
-                </a>
-            </div>
-            <div class="col-6 jeux">
-                <a  class="lien_jeux" href="#">
-                    JEUX
-                </a>
-            </div>
-        </div>
-        <style>
+    <div class="col-6 video">
+        <a  class="lien_video" href="#">
+            VIDÉOS
+        </a>
+    </div>
+    <div class="col-6 jeux">
+        <a  class="lien_jeux" href="#">
+            JEUX
+        </a>
+    </div>
+</div>
+<style>
 .video_jeux{
     display: flex;
     flex-direction: row;

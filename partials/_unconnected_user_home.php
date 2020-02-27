@@ -32,6 +32,10 @@
     #connexion-form {
         margin-top: 50%;
     }
+
+    /*CONEXION*/
+
+
 </style>
 <div id="full_screen">
     <!--top of the page deco and logo-->
@@ -86,8 +90,24 @@
                         <label for="co_password">Mot de passe</label>
                         <input type="password" class="form-control" id="co_password">
                     </div>
+<!--
                     <button id="co_button">Connexion</button>
-                    <p>Je veux vous rejoindre !</p>
+                    <div class="">
+                        <a class="registration" href="#">Je veux vous rejoindre !</a>
+                    </div>
+                    <div class="">
+                        <a class="password" href="#"> Mots de passe oublié ?</a>
+                    <div>
+-->
+                    <div class="checkbox mb-3">
+                        <label>
+                            <input type="checkbox" value="remember-me"> Se souvenir de moi</label>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Se connecter</button>
+                    </div>
+                    <a class="registration" href="#">Je veux vous rejoindre !</a>
+                    <div>
+                        <a class="password" href="#">Mots de passe oublié ?</a>
+                    </div>
                 </div>
             </form>
         </div>
