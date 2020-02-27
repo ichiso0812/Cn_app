@@ -7,10 +7,6 @@
     <link rel="stylesheet" href="/Cn-app/assets/css/accueil.css">
 </head>
     <body>
-
-
-
-
         <?php session_start(); ?>
         <?php if (isset($_SESSION["account_email"])){ //CONNECTED USER
 
@@ -254,29 +250,12 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <?php } else { //UNCONNECTED USER
-             include 'partials/_unconnected_user_home.php';
-        } ?>
+        <?php } else { //UNCONNECTED USER 
+        ?>
+            <script>
+                location.href = "/Cn-app/pages/choixprofile"
+            </script> 
+        <?php } ?>
 
         <!--
             <label>Nom: <input type="text" name="lastname" id="inscription_name"></label>

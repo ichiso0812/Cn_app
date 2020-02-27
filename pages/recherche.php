@@ -16,7 +16,10 @@
             <form class="mb-5">
                 <div class="row">
                     <div class="col-2">
-                        <img src="/Cn-app/assets/imgs/icono/arrow-left.png" class="picto" alt="Picto d'une flèche gauche">
+                        <a href="/Cn-app/index">
+                            <img src="/Cn-app/assets/imgs/icono/arrow-left.png" class="picto" alt="Picto d'une flèche gauche">
+                        </a>
+                        
                     </div>
                     <div class="col-8">
                         <h1 style="color: white ">Recherche</h1>
