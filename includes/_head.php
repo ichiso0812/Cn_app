@@ -4,11 +4,12 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 <!--CSS-->
+<!--MY CSS-->
+<link rel="stylesheet" href=<?='/Cn-app/assets/css/main.css';?> />
 <!--BOOTSTRAP-->
 <link rel="stylesheet" href="/Cn-app/libs/bootstrap.min.css" >
 <!--SLICK FOR SLIDER-->
 <link rel="stylesheet" href=<?='/Cn-app/libs/slick.css';?> />
-<!--MY CSS-->
-<link rel="stylesheet" href=<?='/Cn-app/assets/css/main.css';?> />
+
 
 
