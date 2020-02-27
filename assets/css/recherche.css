@@ -11,7 +11,7 @@ h1{
 }
 
 /*RECHERCHE*/
-img{
+.picto{
     width: 25px;
     margin-top: 20px;
 }
@@ -47,7 +47,6 @@ p{
     right: 0;
 
 }
-
 /*GROUPE BOUTONS*/
 .btn-primary {
     background-color:#ed0080;
@@ -59,6 +58,9 @@ a.btn.my-2{
 .btn-outline-dark{
     border-color: white;
     color : white;
+}
+.btn-outline-dark:hover{
+    background-color:#ed0080; 
 }
 /* MENU DU BAS VIDEOS/JEUX*/
 .video_jeux{ 
