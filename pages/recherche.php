@@ -4,13 +4,11 @@
     <?php include $_SERVER["DOCUMENT_ROOT"] . '/Cn-app/includes/_head.php'; ?>
     <meta description="">
     <title>Page de recherche</title>
-    <link rel="stylesheet" href="/Cn-app/assets/css/index.css"/>
-    <link rel="stylesheet" href="/Cn-app/assets/css/main.css"/>
     <link rel="stylesheet" href="/Cn-app/assets/css/recherche.css"/>
 </head>
     <body class="text-center">
-    <!--Ici Header/Menu Burger-->
-    <?php include $_SERVER["DOCUMENT_ROOT"] . '/Cn-app/partials/_all_series_slider.php' ?>
+    <?php include $_SERVER["DOCUMENT_ROOT"] . '/Cn-app/partials/_header.php'; ?>
+    <?php include $_SERVER["DOCUMENT_ROOT"] . '/Cn-app/partials/_all_series_slider.php'; ?>
     <div class="content">
         <div class="container-fluid">
     
@@ -18,7 +16,8 @@
             <form class="mb-5">
                 <div class="row">
                     <div class="col-2">
-                        <img src="/Cn-app/assets/imgs/icono/arrow-left.png" alt="Picto d'une flèche gauche">
+                        <a href="/Cn-app/index.php">
+                        <img src="/Cn-app/assets/imgs/icono/arrow-left.png" class="picto" alt="Picto d'une flèche gauche"></a>
                     </div>
                     <div class="col-8">
                         <h1 style="color: white ">Recherche</h1>
